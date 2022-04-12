@@ -1,5 +1,5 @@
 {
-    "collection": "https://github.com/ConductionNL/PDC_publiccode/PDS_OAS.json", 
+    "collection": "https://github.com/ConductionNL/PDC_publiccode/blob/main/PDC_OAS.json", 
     "schemas": {
         "Product": [
             {
