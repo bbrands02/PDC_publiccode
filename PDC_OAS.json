@@ -1,0 +1,238 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "PDC",
+      "version": "1.0"
+    },
+    "paths": {
+      "/product": {
+        "get": {
+          "summary": "Your GET endpoint",
+          "tags": [],
+          "responses": {},
+          "operationId": "get-product"
+        },
+        "post": {
+          "summary": "",
+          "operationId": "post-product",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/product/{id}": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "get": {
+          "summary": "Your GET endpoint",
+          "tags": [],
+          "responses": {},
+          "operationId": "get-product-id"
+        },
+        "put": {
+          "summary": "",
+          "operationId": "put-product-id",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "summary": "",
+          "operationId": "delete-product-id",
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Product": {
+          "title": "Product",
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string",
+              "maxLength": 255
+            },
+            "slug": {
+              "type": "string",
+              "maxLength": 255
+            },
+            "content": {
+              "type": "string"
+            },
+            "excerpt": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            },
+            "post_status": {
+              "type": "string",
+              "maxLength": 15
+            },
+            "protected": {
+              "type": "boolean"
+            },
+            "appointment": {
+              "type": "object",
+              "properties": {
+                "active": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "download": {
+              "type": "array",
+              "items": {}
+            },
+            "faq": {
+              "type": "array",
+              "items": {}
+            },
+            "forms": {
+              "type": "array",
+              "items": {}
+            },
+            "image": {
+              "type": "array",
+              "items": {}
+            },
+            "language": {
+              "type": "string"
+            },
+            "links": {
+              "type": "array",
+              "items": {}
+            },
+            "locations": {
+              "type": "array",
+              "items": {}
+            },
+            "synonyms": {
+              "type": "string"
+            },
+            "taxonomies": {
+              "type": "object",
+              "properties": {
+                "pdc-doelgroep": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "pdc-type": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "pdc-aspect": {
+                  "type": "array",
+                  "items": {}
+                },
+                "pdc-usage": {
+                  "type": "array",
+                  "items": {}
+                },
+                "pdc-owner": {
+                  "type": "array",
+                  "items": {}
+                }
+              }
+            },
+            "title-alternative": {
+              "type": "string"
+            }
+          },
+          "required": ["title"],
+          "description": "Product from the PDS API",
+          "examples": [
+            {
+              "id": "string",
+              "title": "string",
+              "slug": "string",
+              "content": "string",
+              "excerpt": "string",
+              "date": "2019-08-24",
+              "post_status": "string",
+              "protected": true,
+              "appointment": {
+                "active": true
+              },
+              "download": [null],
+              "faq": [null],
+              "forms": [null],
+              "image": [null],
+              "language": "string",
+              "links": [null],
+              "locations": [null],
+              "synonyms": "string",
+              "taxonomies": {
+                "pdc-doelgroep": [
+                  {
+                    "id": 0,
+                    "name": "string",
+                    "slug": "string"
+                  }
+                ],
+                "pdc-type": [
+                  {
+                    "id": "string",
+                    "name": "string",
+                    "slug": "string"
+                  }
+                ],
+                "pdc-aspect": [null],
+                "pdc-usage": [null],
+                "pdc-owner": [null]
+              },
+              "title-alternative": "string"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,117 @@
+{
+    "collection": "https://github.com/ConductionNL/PDC_publiccode/PDS_OAS.json", 
+    "schemas": {
+        "Product": [
+            {
+               "properties": {
+                "id": 3401,
+                "title": "Hulp en advies",
+                "slug": "hulp-en-advies",
+                "content": "<h2>Rivierenland Werkt</h2>\n<p>Heeft u als werkgever in deze tijd teveel of juist te weinig personeel? Wij helpen u verder! Mensen die door de coronacrisis hun werk zijn verloren of dreigen te verliezen en werkgevers die vanwege corona vragen hebben over de inzet van personeel, kunnen terecht bij <a href=\"http://www.rivierenlandwerkt.nu/\">www.rivierenlandwerkt.nu</a>. VNO-NCW Rivierenland, FNV/CNV, Werkzaak Rivierenland, UWV, beroepsonderwijs en gemeenten in de regio Rivierenland werken intensief samen in een multi-disciplinair mobiliteitsteam. Het team begeleidt mensen zoveel mogelijk naar nieuw werk. Waar nodig wordt om- en bijscholing ingezet.</p>\n<h2>Hulp en advies voor ondernemers</h2>\n<p>Is uw bedrijf nog levensvatbaar na de coronacrisis? Of kiest u misschien liever voor een baan in loondienst? Of beide? We bieden ondersteuning bij het versterken van uw onderneming en geven advies over regelingen en bij betalingsachterstanden. We kunnen u ook begeleiden naar (tijdelijk) ander werk. Bel 14 0344 of stuur een mail naar <a href=\"mailto:werkeninkomen@buren.nl\">werkeninkomen@buren.nl</a> voor een vrijblijvend gesprek.</p>\n",
+                "excerpt": "",
+                "date": "2022-03-15 16:45:42",
+                "post_status": "publish",
+                "protected": false,
+                "appointment": {
+                    "active": false
+                },
+                "downloads": [],
+                "faq": [],
+                "forms": [],{
+                    "collection":"https://raw.githubusercontent.com/VNG-Realisatie/verzoeken-api/master/src/openapi.yaml",
+                    "schemas":{
+                       "Product":[
+                          {
+                             "properties":{
+                                "id":3401,
+                                "title":"Hulp en advies",
+                                "slug":"hulp-en-advies",
+                                "content":"<h2>Rivierenland Werkt</h2>\n<p>Heeft u als werkgever in deze tijd teveel of juist te weinig personeel? Wij helpen u verder! Mensen die door de coronacrisis hun werk zijn verloren of dreigen te verliezen en werkgevers die vanwege corona vragen hebben over de inzet van personeel, kunnen terecht bij <a href=\"http://www.rivierenlandwerkt.nu/\">www.rivierenlandwerkt.nu</a>. VNO-NCW Rivierenland, FNV/CNV, Werkzaak Rivierenland, UWV, beroepsonderwijs en gemeenten in de regio Rivierenland werken intensief samen in een multi-disciplinair mobiliteitsteam. Het team begeleidt mensen zoveel mogelijk naar nieuw werk. Waar nodig wordt om- en bijscholing ingezet.</p>\n<h2>Hulp en advies voor ondernemers</h2>\n<p>Is uw bedrijf nog levensvatbaar na de coronacrisis? Of kiest u misschien liever voor een baan in loondienst? Of beide? We bieden ondersteuning bij het versterken van uw onderneming en geven advies over regelingen en bij betalingsachterstanden. We kunnen u ook begeleiden naar (tijdelijk) ander werk. Bel 14 0344 of stuur een mail naar <a href=\"mailto:werkeninkomen@buren.nl\">werkeninkomen@buren.nl</a> voor een vrijblijvend gesprek.</p>\n",
+                                "excerpt":"",
+                                "date":"2022-03-15 16:45:42",
+                                "post_status":"publish",
+                                "protected":false,
+                                "appointment":{
+                                   "active":false
+                                },
+                                "downloads":[
+                                   
+                                ],
+                                "faq":[
+                                   
+                                ],
+                                "forms":[
+                                   
+                                ],
+                                "image":[
+                                   
+                                ],
+                                "language":"nl",
+                                "links":[
+                                   
+                                ],
+                                "locations":[
+                                   
+                                ],
+                                "synonyms":"",
+                                "taxonomies":{
+                                   "pdc-doelgroep":[
+                                      {
+                                         "id":6,
+                                         "name":"Ondernemers",
+                                         "slug":"ondernemers"
+                                      }
+                                   ],
+                                   "pdc-type":[
+                                      {
+                                         "id":15,
+                                         "name":"Informatieproduct",
+                                         "slug":"informatieproduct"
+                                      }
+                                   ],
+                                   "pdc-aspect":[
+                                      
+                                   ],
+                                   "pdc-usage":[
+                                      
+                                   ],
+                                   "pdc-owner":[
+                                      
+                                   ]
+                                },
+                                "title_alternative":""
+                             }
+                          }
+                       ]
+                    }
+                 },
+                "image": [],
+                "language": "nl",
+                "links": [],
+                "locations": [],
+                "synonyms": "",
+                "taxonomies": {
+                    "pdc-doelgroep": [
+                        {
+                            "id": 6,
+                            "name": "Ondernemers",
+                            "slug": "ondernemers"
+                        }
+                    ],
+                    "pdc-type": [
+                        {
+                            "id": 15,
+                            "name": "Informatieproduct",
+                            "slug": "informatieproduct"
+                        }
+                    ],
+                    "pdc-aspect": [],
+                    "pdc-usage": [],
+                    "pdc-owner": []
+                },
+                "title_alternative": ""
+            }
+            }
+        ]
+    }
+}
