@@ -80,7 +80,8 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Product"
-                }
+                },
+                "examples": {}
               }
             }
           }
@@ -383,11 +384,13 @@
         "content": {
           "application/json": {
             "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/components/schemas/Product"
-              }
-            }
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/Product"
+                }
+              ]
+            },
+            "examples": {}
           },
           "application/xml": {
             "schema": {
