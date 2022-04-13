@@ -35,12 +35,12 @@ description:
     shortDescription: "Een API voor het registreren, bewerken en opvragen van producten."
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json'
     apiDocumentation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json'
-    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/data/PDS.json'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/data/PDC.json'
   en:
     shortDescription: "An API to register, edit and read products"
     documentation: 'https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json'
     apiDocumentation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json'
-    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/data/PDS.json'
+    testDataLocation: 'https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/data/PDC.json'
 
 dependsOn:
   open:
