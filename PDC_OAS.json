@@ -5,364 +5,25 @@
     "version": "1.0"
   },
   "paths": {
-    "/product": {
+    "/products": {
       "get": {
         "summary": "Your GET endpoint",
         "tags": [],
+        "operationId": "get-product",
+        "description": "Vraag alle producten op",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
-                  "type": "object",
-                  "properties": {
-                    "product": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "title",
-                          "slug",
-                          "content",
-                          "excerpt",
-                          "date",
-                          "post_status",
-                          "protected",
-                          "language",
-                          "synonyms",
-                          "title-alternative"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "slug": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "content": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "excerpt": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "date": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "post_status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "protected": {
-                            "type": "boolean"
-                          },
-                          "appointment": {
-                            "type": "object",
-                            "properties": {
-                              "active": {
-                                "type": "boolean"
-                              }
-                            },
-                            "required": [
-                              "active"
-                            ]
-                          },
-                          "download": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "faq": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "forms": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "image": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "language": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "links": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "locations": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "synonyms": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "taxonomies": {
-                            "type": "object",
-                            "properties": {
-                              "pdc-doelgroep": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-type": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-aspect": {
-                                "type": "array",
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-usage": {
-                                "type": "array",
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-owner": {
-                                "type": "array",
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              }
-                            },
-                            "required": [
-                              "pdc-doelgroep",
-                              "pdc-type",
-                              "pdc-aspect",
-                              "pdc-usage",
-                              "pdc-owner"
-                            ]
-                          },
-                          "title-alternative": {
-                            "type": "string",
-                            "minLength": 1
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "product"
-                  ],
-                  "x-examples": {
-                    "example-1": {
-                      "product": [
-                        {
-                          "id": "string",
-                          "title": "string",
-                          "slug": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "2019-08-24",
-                          "post_status": "string",
-                          "protected": true,
-                          "appointment": {
-                            "active": true
-                          },
-                          "download": [
-                            null
-                          ],
-                          "faq": [
-                            null
-                          ],
-                          "forms": [
-                            null
-                          ],
-                          "image": [
-                            null
-                          ],
-                          "language": "string",
-                          "links": [
-                            null
-                          ],
-                          "locations": [
-                            null
-                          ],
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "pdc-doelgroep": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-type": [
-                              {
-                                "id": "string",
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-aspect": [
-                              null
-                            ],
-                            "pdc-usage": [
-                              null
-                            ],
-                            "pdc-owner": [
-                              null
-                            ]
-                          },
-                          "title-alternative": "string"
-                        }
-                      ]
-                    }
-                  }
+                  "$ref": "#/components/schemas/ProductCollection"
                 },
-                "examples": {
-                  "example-1": {
-                    "value": {
-                      "product": [
-                        {
-                          "id": "string",
-                          "title": "string",
-                          "slug": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "post_status": "string",
-                          "protected": true,
-                          "appointment": {
-                            "active": true
-                          },
-                          "download": [
-                            {}
-                          ],
-                          "faq": [
-                            {}
-                          ],
-                          "forms": [
-                            {}
-                          ],
-                          "image": [
-                            {}
-                          ],
-                          "language": "string",
-                          "links": [
-                            {}
-                          ],
-                          "locations": [
-                            {}
-                          ],
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "pdc-doelgroep": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-type": [
-                              {
-                                "id": "string",
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-aspect": [
-                              {}
-                            ],
-                            "pdc-usage": [
-                              {}
-                            ],
-                            "pdc-owner": [
-                              {}
-                            ]
-                          },
-                          "title-alternative": "string"
-                        }
-                      ]
-                    }
-                  }
-                }
+                "examples": {}
               }
             }
           }
-        },
-        "operationId": "get-product",
-        "description": "Vraag alle producten op"
+        }
       },
       "post": {
         "summary": "",
@@ -373,298 +34,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
-                  "type": "object",
-                  "properties": {
-                    "product": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "title",
-                          "slug",
-                          "content",
-                          "excerpt",
-                          "date",
-                          "post_status",
-                          "protected",
-                          "language",
-                          "synonyms",
-                          "title-alternative"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "slug": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "content": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "excerpt": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "date": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "post_status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "protected": {
-                            "type": "boolean"
-                          },
-                          "appointment": {
-                            "type": "object",
-                            "properties": {
-                              "active": {
-                                "type": "boolean"
-                              }
-                            },
-                            "required": [
-                              "active"
-                            ]
-                          },
-                          "download": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "faq": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "forms": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "image": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "language": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "links": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "locations": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "synonyms": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "taxonomies": {
-                            "type": "object",
-                            "properties": {
-                              "pdc-doelgroep": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-type": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-aspect": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-usage": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-owner": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              }
-                            },
-                            "required": [
-                              "pdc-doelgroep",
-                              "pdc-type",
-                              "pdc-aspect",
-                              "pdc-usage",
-                              "pdc-owner"
-                            ]
-                          },
-                          "title-alternative": {
-                            "type": "string",
-                            "minLength": 1
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "product"
-                  ],
-                  "x-examples": {
-                    "example-1": {
-                      "product": [
-                        {
-                          "id": "string",
-                          "title": "string",
-                          "slug": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "post_status": "string",
-                          "protected": true,
-                          "appointment": {
-                            "active": true
-                          },
-                          "download": [
-                            {}
-                          ],
-                          "faq": [
-                            {}
-                          ],
-                          "forms": [
-                            {}
-                          ],
-                          "image": [
-                            {}
-                          ],
-                          "language": "string",
-                          "links": [
-                            {}
-                          ],
-                          "locations": [
-                            {}
-                          ],
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "pdc-doelgroep": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-type": [
-                              {
-                                "id": "string",
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-aspect": [
-                              {}
-                            ],
-                            "pdc-usage": [
-                              {}
-                            ],
-                            "pdc-owner": [
-                              {}
-                            ]
-                          },
-                          "title-alternative": "string"
-                        }
-                      ]
-                    }
-                  }
+                  "$ref": "#/components/schemas/Product"
                 }
               }
             }
@@ -682,9 +52,10 @@
           }
         ],
         "description": "Maak een product aan"
-      }
+      },
+      "parameters": []
     },
-    "/product/{id}": {
+    "/products/{id}": {
       "parameters": [
         {
           "schema": {
@@ -692,8 +63,8 @@
           },
           "name": "id",
           "in": "path",
-          "required": true,
-          "description": "Unieke ID"
+          "description": "Unieke ID",
+          "required": true
         }
       ],
       "get": {
@@ -705,298 +76,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
-                  "type": "object",
-                  "properties": {
-                    "product": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "title",
-                          "slug",
-                          "content",
-                          "excerpt",
-                          "date",
-                          "post_status",
-                          "protected",
-                          "language",
-                          "synonyms",
-                          "title-alternative"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "slug": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "content": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "excerpt": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "date": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "post_status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "protected": {
-                            "type": "boolean"
-                          },
-                          "appointment": {
-                            "type": "object",
-                            "properties": {
-                              "active": {
-                                "type": "boolean"
-                              }
-                            },
-                            "required": [
-                              "active"
-                            ]
-                          },
-                          "download": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "faq": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "forms": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "image": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "language": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "links": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "locations": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          },
-                          "synonyms": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "taxonomies": {
-                            "type": "object",
-                            "properties": {
-                              "pdc-doelgroep": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "number"
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-type": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "slug"
-                                  ],
-                                  "properties": {
-                                    "id": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "name": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "slug": {
-                                      "type": "string",
-                                      "minLength": 1
-                                    }
-                                  }
-                                }
-                              },
-                              "pdc-aspect": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-usage": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              },
-                              "pdc-owner": {
-                                "type": "array",
-                                "uniqueItems": true,
-                                "minItems": 1,
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              }
-                            },
-                            "required": [
-                              "pdc-doelgroep",
-                              "pdc-type",
-                              "pdc-aspect",
-                              "pdc-usage",
-                              "pdc-owner"
-                            ]
-                          },
-                          "title-alternative": {
-                            "type": "string",
-                            "minLength": 1
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "required": [
-                    "product"
-                  ],
-                  "x-examples": {
-                    "example-1": {
-                      "product": [
-                        {
-                          "id": "string",
-                          "title": "string",
-                          "slug": "string",
-                          "content": "string",
-                          "excerpt": "string",
-                          "date": "string",
-                          "post_status": "string",
-                          "protected": true,
-                          "appointment": {
-                            "active": true
-                          },
-                          "download": [
-                            {}
-                          ],
-                          "faq": [
-                            {}
-                          ],
-                          "forms": [
-                            {}
-                          ],
-                          "image": [
-                            {}
-                          ],
-                          "language": "string",
-                          "links": [
-                            {}
-                          ],
-                          "locations": [
-                            {}
-                          ],
-                          "synonyms": "string",
-                          "taxonomies": {
-                            "pdc-doelgroep": [
-                              {
-                                "id": 0,
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-type": [
-                              {
-                                "id": "string",
-                                "name": "string",
-                                "slug": "string"
-                              }
-                            ],
-                            "pdc-aspect": [
-                              {}
-                            ],
-                            "pdc-usage": [
-                              {}
-                            ],
-                            "pdc-owner": [
-                              {}
-                            ]
-                          },
-                          "title-alternative": "string"
-                        }
-                      ]
-                    }
-                  }
+                  "$ref": "#/components/schemas/Product"
                 }
               }
             }
@@ -1010,7 +90,14 @@
         "operationId": "put-product-id",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
           }
         },
         "description": "Een specifiek product updaten"
@@ -1278,6 +365,42 @@
             "title-alternative": "string"
           }
         ]
+      },
+      "ProductCollection": {
+        "title": "ProductCollection",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Product"
+        }
+      }
+    },
+    "securitySchemes": {
+      "API Key - 1": {
+        "name": "API Key",
+        "type": "apiKey",
+        "in": "query"
+      }
+    },
+    "responses": {
+      "product": {
+        "description": "Example response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "application/xml": {
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        }
       }
     }
   }
