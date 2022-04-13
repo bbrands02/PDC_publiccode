@@ -10,6 +10,6 @@ De API ondersteunt het opslaan en het naar andere applicaties ontsluiten van geg
 
 | Versie | Release datum | API specificatie |
 |--------|---------------|------------------|
-| master | 13-04-2022    | [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json), [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PPDC_OAS.json)   |
+| master | 13-04-2022    | [ReDoc](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json), [Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json)   |
 |        |               |                  |
 |        |               |                  |
