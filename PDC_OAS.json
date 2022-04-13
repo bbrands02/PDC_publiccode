@@ -17,7 +17,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProductCollection"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
                 },
                 "examples": {}
               }
@@ -365,13 +368,6 @@
             "title-alternative": "string"
           }
         ]
-      },
-      "ProductCollection": {
-        "title": "ProductCollection",
-        "type": "array",
-        "items": {
-          "$ref": "#/components/schemas/Product"
-        }
       }
     },
     "securitySchemes": {
@@ -387,10 +383,9 @@
         "content": {
           "application/json": {
             "schema": {
-              "properties": {
-                "id": {
-                  "type": "string"
-                }
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Product"
               }
             }
           },
